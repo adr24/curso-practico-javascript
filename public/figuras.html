@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de figuras</title>
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav
+        class="flex flex-row flex-wrap items-center justify-around sm:bg-blue-200  md:bg-yellow-200 lg:bg-pink-200 border-2 m-4 p-2 rounded-lg ">
+
+        <div class="">
+            <img src="img/ico.png" alt="icon" width="75px">
+        </div>
+        <div class=" w-1/2">
+            <h2 class="text-3xl font-bold">MathBot </h2>
+        </div>
+    </nav>
+
+    <main>
+        <div class=" flex flex-row items-center justify-center mt-10  ">
+            <p class="w-48">👋🏼 Hi, I'm a <span class="font-bold">MathBot</span>, and i'm gonna help you with basics
+                math
+                calcs!!</p>
+            <img src="img/bot.png" alt="bot-img" srcset="">
+        </div>
+        <!-- little menu -->
+
+        <div class="flex flex-col items-center ">
+            <p class="m-4">What are we going to calculate today?</p>
+
+            <div class="flex flex-col mt-8 w-full lg:flex-row lg:justify-center ">
+
+                <button class=" bg-red-300 border-2    mx-4 px-8 py-4 rounded-lg shadow-xl">Geometry</button>
+                <button class=" bg-blue-300 border-2   mx-4 px-8 py-4 rounded-lg shadow-xl">Discounts</button>
+                <button class=" bg-green-300  border-2 mx-4 px-8 py-4 rounded-lg shadow-xl">Statics</button>
+                <button class=" bg-purple-300 border-2 mx-4 px-8 py-4 rounded-lg shadow-xl">Analysis</button>
+
+            </div>
+
+        </div>
+
+        <div>
+            <div>
+                <h1 class="text-2xl m-4 ">Geometry</h1>
+                <!-- Figuras -->
+                <div class=" flex flex-col justify-around  p-8 bg-red-100 lg:flex-row">
+
+                    <!-- Cuadrado -->
+                    <div class=" flex flex-col justify-center bg-red-200  p-4 m-4 rounded-lg">
+                        <div class=" flex flex-row items-center ">
+                            <img src="img/square.png" alt="square" width="100">
+                            <span>Square</span>
+                        </div>
+                        <p>How long is each side of your square?</p>
+                        <input class="  rounded-lg my-2 w-full text-center	" type="text">
+
+                        <div class="my-2">
+                            <button class="bg-white p-1 rounded-lg text-red-400">Get Perimeter</button>
+                            <button class="bg-white p-1 rounded-lg text-red-400">Get Area</button>
+                        </div>
+                        <div class="flex flex-row justify-center">
+                            <span class=" bg-white text-red-400 rounded-lg text-center p-1 w-full">Result:</span>
+                        </div>
+                    </div>
+
+                    <!-- Triangulo -->
+                    <div class="flex flex-col justify-center bg-red-200  p-4 m-4 rounded-lg">
+                        <div class=" flex flex-row items-center ">
+                            <img src="img/triangle.png" alt="square" width="100">
+                            <span>Triangle</span>
+                        </div>
+                        <p>What are the measurements of your triangle?</p>
+
+                        <input id="side1" class="  rounded-lg my-2 w-full text-center	" type="text"
+                            placeholder="Side 1">
+                        <input id="side1" class="  rounded-lg my-2 w-full text-center	" type="text"
+                            placeholder="Side 2">
+                        <input id="side1" class="  rounded-lg my-2 w-full text-center	" type="text"
+                            placeholder="Side 3">
+
+                        <div class="my-2">
+                            <button class="bg-white p-1 rounded-lg text-red-400">Get Perimeter</button>
+                            <button class="bg-white p-1 rounded-lg text-red-400">Get Area</button>
+                        </div>
+                        <div class="flex flex-row justify-center">
+                            <span class=" bg-white text-red-400 rounded-lg text-center p-1 w-full">Result:</span>
+                        </div>
+                    </div>
+
+                    <!-- Ciculo -->
+                    <div class="flex flex-col justify-center bg-red-200 p-4 m-4 rounded-lg">
+                        <div class=" flex flex-row items-center ">
+                            <img src="img/circle.png" alt="square" width="100">
+                            <span>Circle</span>
+                        </div>
+                        <p>What is the radio of your circle?</p>
+                        <input class="  rounded-lg my-2 w-full text-center	" type="text">
+
+                        <div class="my-2">
+                            <button class="bg-white p-1 rounded-lg text-red-400">Get Perimeter</button>
+                            <button class="bg-white p-1 rounded-lg text-red-400">Get Area</button>
+                        </div>
+                        <div class="flex flex-row justify-center">
+                            <span class=" bg-white text-red-400 rounded-lg text-center p-1 w-full">Result:</span>
+                        </div>
+                    </div>
+
+
+                    <!-- Triangulo -->
+                    <div></div>
+                    <!-- Circulo -->
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- Scripts -->
+
+    <script src="figuras.js"></script>
+
+</body>
+
+</html>

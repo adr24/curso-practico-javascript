@@ -1,0 +1,28 @@
+{
+  "name": "curso-practico-javascript",
+  "version": "1.0.0",
+  "description": "Proyecto del curso de platzi de JavaScript-JuanDC",
+  "main": "figuras.js",
+  "scripts": {
+    "build-css": "tailwindcss build css/tailwind.css -o public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidConstante/curso-practico-javascript.git"
+  },
+  "keywords": [
+    "platzi"
+  ],
+  "author": "David Constante <omileconstante@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidConstante/curso-practico-javascript/issues"
+  },
+  "homepage": "https://github.com/DavidConstante/curso-practico-javascript#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.14"
+  }
+}
