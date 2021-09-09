@@ -38,7 +38,8 @@
 
             <div class="flex flex-col mt-8 w-full lg:flex-row lg:justify-center ">
 
-                <button class=" bg-red-300 border-2    mx-4 px-8 py-4 rounded-lg shadow-xl">Geometry</button>
+                <button class=" bg-red-300 border-2    mx-4 px-8 py-4 rounded-lg shadow-xl"
+                    onclick="location.href='#geometry'">Geometry</button>
                 <button class=" bg-blue-300 border-2   mx-4 px-8 py-4 rounded-lg shadow-xl">Discounts</button>
                 <button class=" bg-green-300  border-2 mx-4 px-8 py-4 rounded-lg shadow-xl">Statics</button>
                 <button class=" bg-purple-300 border-2 mx-4 px-8 py-4 rounded-lg shadow-xl">Analysis</button>
@@ -49,7 +50,7 @@
 
         <div>
             <div>
-                <h1 class="text-2xl m-4 ">Geometry</h1>
+                <h1 id="geometry" class="text-2xl m-4 ">Geometry</h1>
                 <!-- Figuras -->
                 <div class=" flex flex-col justify-around  p-8 bg-red-100 lg:flex-row">
 
@@ -60,14 +61,17 @@
                             <span>Square</span>
                         </div>
                         <p>How long is each side of your square?</p>
-                        <input class="  rounded-lg my-2 w-full text-center	" type="text">
+                        <input id="inp_square_side" class="  rounded-lg my-2 w-full text-center	" placeholder="Side"
+                            type="text">
 
                         <div class="my-2">
-                            <button class="bg-white p-1 rounded-lg text-red-400">Get Perimeter</button>
-                            <button class="bg-white p-1 rounded-lg text-red-400">Get Area</button>
+                            <button id="btn_square_perimeter" class="bg-white p-1 rounded-lg text-red-400">Get
+                                Perimeter</button>
+                            <button id="btn_square_area" class="bg-white p-1 rounded-lg text-red-400">Get Area</button>
                         </div>
                         <div class="flex flex-row justify-center">
-                            <span class=" bg-white text-red-400 rounded-lg text-center p-1 w-full">Result:</span>
+                            <span id="spn_square"
+                                class=" bg-white text-black-400 rounded-lg text-center p-1 w-full">Result:</span>
                         </div>
                     </div>
 
@@ -79,19 +83,22 @@
                         </div>
                         <p>What are the measurements of your triangle?</p>
 
-                        <input id="side1" class="  rounded-lg my-2 w-full text-center	" type="text"
+                        <input id="inp_triangle_side1" class="  rounded-lg my-2 w-full text-center	" type="text"
                             placeholder="Side 1">
-                        <input id="side1" class="  rounded-lg my-2 w-full text-center	" type="text"
+                        <input id="inp_triangle_side2" class="  rounded-lg my-2 w-full text-center	" type="text"
                             placeholder="Side 2">
-                        <input id="side1" class="  rounded-lg my-2 w-full text-center	" type="text"
+                        <input id="inp_triangle_side3" class="  rounded-lg my-2 w-full text-center	" type="text"
                             placeholder="Side 3">
 
                         <div class="my-2">
-                            <button class="bg-white p-1 rounded-lg text-red-400">Get Perimeter</button>
-                            <button class="bg-white p-1 rounded-lg text-red-400">Get Area</button>
+                            <button id="btn_triangle_perimeter" class="bg-white p-1 rounded-lg text-red-400">Get
+                                Perimeter</button>
+                            <button id="btn_triangle_area" class="bg-white p-1 rounded-lg text-red-400">Get
+                                Area</button>
                         </div>
                         <div class="flex flex-row justify-center">
-                            <span class=" bg-white text-red-400 rounded-lg text-center p-1 w-full">Result:</span>
+                            <span id="spn_triangle"
+                                class=" bg-white text-black-400 rounded-lg text-center p-1 w-full">Result:</span>
                         </div>
                     </div>
 
@@ -102,14 +109,17 @@
                             <span>Circle</span>
                         </div>
                         <p>What is the radio of your circle?</p>
-                        <input class="  rounded-lg my-2 w-full text-center	" type="text">
+                        <input id="inp_circle_radio" class="  rounded-lg my-2 w-full text-center	" placeholder="Radio"
+                            type="text">
 
                         <div class="my-2">
-                            <button class="bg-white p-1 rounded-lg text-red-400">Get Perimeter</button>
-                            <button class="bg-white p-1 rounded-lg text-red-400">Get Area</button>
+                            <button id="btn_circle_perimeter" class="bg-white p-1 rounded-lg text-red-400">Get
+                                Perimeter</button>
+                            <button id="btn_circle_area" class="bg-white p-1 rounded-lg text-red-400">Get Area</button>
                         </div>
                         <div class="flex flex-row justify-center">
-                            <span class=" bg-white text-red-400 rounded-lg text-center p-1 w-full">Result:</span>
+                            <span id="span_circle"
+                                class=" bg-white text-black-400 rounded-lg text-center p-1 w-full">Result:</span>
                         </div>
                     </div>
 
