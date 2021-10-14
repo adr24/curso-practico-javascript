@@ -50,6 +50,8 @@
 
         <div>
             <div>
+
+                <!-- Geometry -->
                 <h1 id="geometry" class="text-2xl m-4 ">Geometry</h1>
                 <!-- Figuras -->
                 <div class=" flex flex-col justify-around  p-8 bg-red-100 lg:flex-row">
@@ -124,11 +126,64 @@
                     </div>
 
 
-                    <!-- Triangulo -->
-                    <div></div>
-                    <!-- Circulo -->
-                    <div></div>
                 </div>
+
+                <!-- Discounts -->
+                <h1 id="discounts" class="text-2xl m-4 ">Discounts</h1>
+
+                <div class="flex flex-col bg-blue-100 p-4 m-4 rounded-lg ">
+                    <div class="  my-4 ">
+                        <h1 class="text-2xl">Cart</h1>
+                    </div>
+                    <div id="items" class="flex ">
+                        <div id="item" class="flex flex-row items-center m-2 p-4 bg-white rounded-lg">
+                            <img src="img/item3.jpg" width="150" alt="">
+                            <div class="flex flex-col items-start m-8 w-8/12 ">
+                                <span id="item_name">FIFINE USB Micrófono para juegos con soporte de brazo flexible
+                                    Filtro
+                                    antipop, Plug and Play con computadora portátil de
+                                    escritorio, Kit de micrófono de transmisión para estudio en casa (T732)
+                                    (T732)</span>
+                                <select id="quantity" class="my-4">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span id="span_item_price" class=" font-bold text-xl" value="47.99">$47.99</span>
+                                <span id="span_dsc_price" class=" font-bold text-xl invisible ">$47.99</span>
+                                <input type="text" placeholder="Disscount Code" id="inp_dsc_code"
+                                    class="p-1 border-2 rounded-lg text-center">
+                                <button id="btn_calc_discount" class="bg-blue-100 m-2 p-2 rounded-xl">Apply
+                                    disscount</button>
+                            </div>
+
+                        </div>
+                        <div class="flex flex-col justify-center bg-white m-2 p-4 rounded-lg">
+                            <TABLE>
+                                <TR>
+                                    <TH class="text-left"> Subtotal</TH>
+                                    <TD id="subtotal" class="">$00.00</TD>
+
+                                </TR>
+                                <TR class="text-left">
+                                    <TH>Descuento</TH>
+                                    <TD id="disscount">$00.00</TD>
+                                </TR>
+                                <TR class="text-left">
+                                    <TH>Total</TH>
+                                    <TD id="total">$00.00</TD>
+                                </TR>
+                            </TABLE>
+
+                            <button class="bg-blue-200 px-2 py-1 my-4 rounded-xl">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </main>
@@ -139,6 +194,9 @@
     <!-- Scripts -->
 
     <script src="figuras.js"></script>
+    <script src="descuentos.js"></script>
+
+
 
 </body>
 
